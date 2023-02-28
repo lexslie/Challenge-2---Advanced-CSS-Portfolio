@@ -1,0 +1,207 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: black;
+    max-height: 50px;
+    color: rgb(184, 90, 22);
+}
+
+header h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  
+nav a {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+    color: rgb(184, 90, 22);
+    font-weight: bold;
+}
+  
+nav a:hover {
+    background-color: aliceblue;
+}
+
+.banner {
+    background-image: url("./images/beach-background.png");
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: auto;
+    padding: 1%;
+    display: flex;
+    justify-content: right;
+    color: rgb(243, 232, 208);
+}
+
+.banner h2 {
+    margin-top: 20%;
+    font-size: 50px;
+}
+
+main {
+    color: #406887
+}
+
+.profile-img {
+    flex-basis: 68%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.layout {
+    margin: 25px 0;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.layout p {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    font-size: large;
+    flex-direction: row;
+}
+
+.layout h2 {
+    font-size: 40px;
+}
+
+footer {
+    color: #406887;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-layout {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: row;
+    align-items: stretch;
+    margin-top: 25px;
+}
+
+.work-box {
+    border: 6px solid;
+    background-color: aliceblue;
+    flex: 1 0 300px;
+    display: flex;
+    align-items: flex-end;
+    min-height: 100px;
+    min-width: auto;
+    padding: 0 0 20px 0;
+    margin: 10px;
+    background-size: 120%;
+    font-size: 20px;
+    margin-right: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.work-box:first-child {
+    min-height: 140px;
+    flex-basis: 90%;
+}
+
+.surf-report {
+    background-image: url(./images/surf.png);
+    color: aliceblue;
+    text-indent: 20px;
+}
+
+.LED-wall {
+    background-image: url(./images/LED.jpeg);
+    color: aliceblue;
+    text-indent: 20px;
+}
+
+.calculator {
+    background-image: url(./images/calculator.jpeg);
+    color: aliceblue;
+    text-indent: 20px;
+}
+
+.pastel-puzzles {
+    background-image: url(./images/pastel.jpeg);
+    color: aliceblue;
+    text-indent: 20px;
+}
+
+.run-buddy {
+    background-image: url(./images/run\ buddy.jpeg);
+    color: aliceblue;
+    text-indent: 20px;
+}
+
+.contact address{
+    justify-content: space-around;
+    color: #406887;
+    font-size: medium;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+
+.contact address a {
+    color: #406887;
+    padding: 5px;
+    font-size: 20px;
+    font-style: normal;
+    margin: 0 0.2rem 0.1rem;
+    display: inline-block;
+    margin-right: 150px;
+}
+
+.contact address a:hover {
+    background-color: aliceblue;
+}
+
+.footer {
+    color: rgb(184, 90, 22);
+    text-align: center;
+    font-size: small;
+}
+
+/* media query for small screen sizes */
+@media screen and (min-width: 768px) {
+    .card-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+}
+@media screen and (min-width: 992px) {
+    header {
+      width: 100%;
+    }
+    .card-column {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+}
